@@ -99,10 +99,23 @@
 name: Hello world
 on: workflow_dispatch
 jobs: 
-    hello:
-      runs-on: ubuntu-latest
-      steps:
-        - name: hello stap
-          run: |
-              echo "welcome to github actions"
-              echo "bye githubactions"
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: build step
+          run : echo "A demo build"
+    
+
+    test:
+        runs-on: ubuntu-latest
+        steps:
+         - name: test-step
+           run: echo "A test step"
+         
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: deploy steps
+              run: echo "A deploy step"
+
+    
