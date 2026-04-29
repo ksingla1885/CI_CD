@@ -103,4 +103,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: hello stap
-          run: echo "welcome to github actions"
+          run: |
+              echo "welcome to github actions"
+              echo "bye githubactions"
